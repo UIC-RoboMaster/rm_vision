@@ -1,5 +1,8 @@
 # rm_vision
 
+## 狠活是杀不死的！！！
+### 牢记君佬开源精神
+
 <img src="docs/rm_vision.svg" alt="rm_vision" width="200" height="200">
 
 ## Overview
@@ -14,21 +17,21 @@ QQ 交流群：797203945
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[![Build Status](https://github.com/chenjunnn/rm_vision/actions/workflows/ci.yml/badge.svg)](https://github.com/chenjunnn/rm_vision/actions/workflows/ci.yml)
+<!-- [![Build Status](https://github.com/UIC-RoboMaster/rm_vision/actions/workflows/ci.yml/badge.svg)](https://github.com/chenUIC-RoboMasterjunnn/rm_vision/actions/workflows/ci.yml) -->
 
 ## 包含项目
 
-装甲板自动瞄准算法模块 https://github.com/chenjunnn/rm_auto_aim
+装甲板自动瞄准算法模块 https://github.com/UIC-RoboMaster/rm_auto_aim
 
-MindVision 相机模块 https://github.com/chenjunnn/ros2_mindvision_camera
+MindVision 相机模块 https://github.com/UIC-RoboMaster/ros2_mindvision_camera
 
-HikVision 相机模块 https://github.com/chenjunnn/ros2_hik_camera
+HikVision 相机模块 https://github.com/UIC-RoboMaster/ros2_hik_camera
 
-机器人云台描述文件 https://github.com/chenjunnn/rm_gimbal_description
+机器人云台描述文件 https://github.com/UIC-RoboMaster/rm_gimbal_description
 
-串口通讯模块 https://github.com/chenjunnn/rm_serial_driver
+串口通讯模块 https://github.com/UIC-RoboMaster/rm_serial_driver
 
-视觉算法仿真器 https://github.com/chenjunnn/rm_vision_simulator
+视觉算法仿真器 https://github.com/UIC-RoboMaster/rm_vision_simulator
 
 ## 通过 Docker 部署
 
