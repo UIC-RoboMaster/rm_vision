@@ -21,8 +21,6 @@ rm_vision 项目旨在为 RoboMaster 队伍提供一个规范、易用、鲁棒�
 
 装甲板自动瞄准算法模块 https://github.com/UIC-RoboMaster/rm_auto_aim
 
-MindVision 相机模块 https://github.com/UIC-RoboMaster/ros2_mindvision_camera
-
 HikVision 相机模块 https://github.com/UIC-RoboMaster/ros2_hik_camera
 
 机器人云台描述文件 https://github.com/UIC-RoboMaster/rm_gimbal_description
