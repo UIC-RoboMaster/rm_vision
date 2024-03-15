@@ -13,8 +13,6 @@ rm_vision 项目旨在为 RoboMaster 队伍提供一个规范、易用、鲁棒�
 
 [<img src="docs/rm_vision_inside.svg" alt="rm_vision_inside" width="100" height="100">](docs/rm_vision_inside.svg)
 
-QQ 交流群：797203945
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <!-- [![Build Status](https://github.com/UIC-RoboMaster/rm_vision/actions/workflows/ci.yml/badge.svg)](https://github.com/chenUIC-RoboMasterjunnn/rm_vision/actions/workflows/ci.yml) -->
@@ -32,6 +30,8 @@ HikVision 相机模块 https://github.com/UIC-RoboMaster/ros2_hik_camera
 串口通讯模块 https://github.com/UIC-RoboMaster/rm_serial_driver
 
 视觉算法仿真器 https://github.com/UIC-RoboMaster/rm_vision_simulator
+
+## 以下暂时无法使用
 
 ## 通过 Docker 部署
 
