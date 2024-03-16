@@ -1,8 +1,9 @@
 name: rm_vision CI
 
 on:
-  push:
-    branches: [ main ]
+  push:
+    branches:
+      - main  # 或你用于部署的分支名
 
 
 jobs:
