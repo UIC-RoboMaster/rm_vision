@@ -5,12 +5,11 @@ RUN mkdir -p /ros_ws/src
 WORKDIR /ros_ws/
 
 # clone projects
-RUN cd src && git clone https://github.com/chenjunnn/rm_auto_aim --depth=1 && \
-    git clone https://github.com/chenjunnn/ros2_mindvision_camera --depth=1 && \
-    git clone https://github.com/chenjunnn/ros2_hik_camera --depth=1 && \
-    git clone https://github.com/chenjunnn/rm_gimbal_description --depth=1 && \
-    git clone https://github.com/chenjunnn/rm_serial_driver --depth=1 && \
-    git clone https://github.com/chenjunnn/rm_vision --depth=1
+RUN cd src && git clone https://github.com/UIC-RoboMaster/UICRM_vision --depth=1 && \
+    git clone https://github.com/UIC-RoboMaster/UICRM_serial_driver --depth=1 && \
+    git clone https://github.com/UIC-RoboMaster/UICRM_gimbal_description --depth=1 && \
+    git clone https://github.com/UIC-RoboMaster/UICRM_auto_aim --depth=1 && \
+    git https://github.com/UIC-RoboMaster/ros2_hik_camera --depth=1
 
 # install dependencies and some tools
 RUN apt-get update && rosdep install --from-paths src --ignore-src -r -y && \
