@@ -9,7 +9,7 @@ RUN cd src && git clone https://github.com/UIC-RoboMaster/UICRM_vision --depth=1
     git clone https://github.com/UIC-RoboMaster/UICRM_serial_driver --depth=1 && \
     git clone https://github.com/UIC-RoboMaster/UICRM_gimbal_description --depth=1 && \
     git clone https://github.com/UIC-RoboMaster/UICRM_auto_aim --depth=1 && \
-    git https://github.com/UIC-RoboMaster/ros2_hik_camera --depth=1
+    git clone https://github.com/UIC-RoboMaster/ros2_hik_camera --depth=1
 
 # install dependencies and some tools
 RUN apt-get update && rosdep install --from-paths src --ignore-src -r -y && \
