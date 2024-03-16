@@ -4,12 +4,15 @@ FROM ros:humble-ros-base
 RUN mkdir -p /ros_ws/src
 WORKDIR /ros_ws/
 
-# clone projects
-RUN cd src && git clone git@github.com:UIC-RoboMaster/UICRM_vision.git --depth=1 && \
+ARG GITHUB_TOKEN
+RUN echo "machine github.com login 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 password x-oauth-basic" > /root/.netrc && \
+    chmod 600 /root/.netrc && \
+    cd src && git clone git@github.com:UIC-RoboMaster/UICRM_vision.git --depth=1 && \
     git clone git@github.com:UIC-RoboMaster/UICRM_serial_driver --depth=1 && \
     git clone git@github.com:UIC-RoboMaster/UICRM_gimbal_description --depth=1 && \
     git clone git@github.com:UIC-RoboMaster/UICRM_auto_aim --depth=1 && \
     git clone git@github.com:UIC-RoboMaster/ros2_hik_camera --depth=1
+    rm -f /root/.netrc
 
 # install dependencies and some tools
 RUN apt-get update && rosdep install --from-paths src --ignore-src -r -y && \
