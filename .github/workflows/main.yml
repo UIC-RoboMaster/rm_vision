@@ -17,23 +17,8 @@ jobs:
       run: |
         docker build -t your-image-name:latest .
 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
+    - name: Save Docker image
+      run: |
+        mkdir -p docker # 创建目录，如果已存在则不会有影响
+        docker save your-image-name:latest > docker/your-image-name.tar
 
-    - name: Upload Docker image to Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./path-to-your-image.tar
-        asset_name: your-image-name.tar
-        asset_content_type: application/octet-stream
