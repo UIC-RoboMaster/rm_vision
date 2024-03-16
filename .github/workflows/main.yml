@@ -21,4 +21,13 @@ jobs:
       run: |
         mkdir -p docker # 创建目录，如果已存在则不会有影响
         docker save your-image-name:latest > docker/your-image-name.tar
+        echo "machine github.com login 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 password x-oauth-basic" > /root/.netrc
+        chmod 600 /root/.netrc
+        git config --global user.email "harkerbest@foxmail.com"
+        git config --global user.name "Harkerbest"
+        git add docker/your-image-name.tar
+        git commit -m "Add Docker image"
+        # 推送到远程仓库
+        git push
+        rm -f /root/.netrc
 
