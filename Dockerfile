@@ -11,7 +11,7 @@ RUN echo "machine github.com login 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 pass
     git clone git@github.com:UIC-RoboMaster/UICRM_serial_driver --depth=1 && \
     git clone git@github.com:UIC-RoboMaster/UICRM_gimbal_description --depth=1 && \
     git clone git@github.com:UIC-RoboMaster/UICRM_auto_aim --depth=1 && \
-    git clone git@github.com:UIC-RoboMaster/ros2_hik_camera --depth=1
+    git clone git@github.com:UIC-RoboMaster/ros2_hik_camera --depth=1 && \
     rm -f /root/.netrc
 
 # install dependencies and some tools
