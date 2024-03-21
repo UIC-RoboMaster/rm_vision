@@ -8,7 +8,7 @@
   ros__parameters:
     timestamp_offset: 0.006
     device_name: /dev/ttyACM0
-    baud_rate: 115200
+    baud_rate: 921600
     flow_control: none
     parity: none
     stop_bits: "1"
