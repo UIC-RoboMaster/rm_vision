@@ -7,10 +7,10 @@ WORKDIR /ros_ws/
 ARG GITHUB_TOKEN
 RUN echo "machine github.com login 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 password x-oauth-basic" > /root/.netrc && \
     chmod 600 /root/.netrc && \
-    cd src && git clone https://github.com/UIC-RoboMaster/UICRM_vision --depth=1 && \
-    git clone https://github.com/UIC-RoboMaster/UICRM_serial_driver --depth=1 && \
-    git clone https://github.com/UIC-RoboMaster/UICRM_gimbal_description --depth=1 && \
-    git clone https://github.com/UIC-RoboMaster/UICRM_auto_aim --depth=1 && \
+    cd src && git clone https://github.com/UIC-RoboMaster/rm_vision --depth=1 && \
+    git clone https://github.com/UIC-RoboMaster/rm_serial_driver --depth=1 && \
+    git clone https://github.com/UIC-RoboMaster/rm_gimbal_description --depth=1 && \
+    git clone https://github.com/UIC-RoboMaster/rm_auto_aim --depth=1 && \
     git clone https://github.com/UIC-RoboMaster/ros2_hik_camera --depth=1 && \
     rm -f /root/.netrc
 
